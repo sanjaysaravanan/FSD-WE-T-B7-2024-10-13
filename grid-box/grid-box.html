@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid-box {
+        display: grid;
+        grid-template-columns: minmax(100px, 200px) minmax(150px, 200px) 200px;
+        gap: 8px;
+      }
+
+      .grid-box > div {
+        height: 100px;
+        background-color: aqua;
+        /* float: left; */
+        /* margin: 8px; */
+
+        flex-shrink: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-box">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>

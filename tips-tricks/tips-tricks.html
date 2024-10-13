@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      /* Varibale declaration & initialization */
+      :root {
+        --primary-color: #fa7436;
+        --para-color: #666666;
+        --grey: #999999;
+        --primary-b: #222222;
+        --color-b-1: #444444;
+      }
+
+      body {
+        margin: 0;
+        background-color: #999;
+      }
+
+      section {
+        margin: 0 48px;
+      }
+
+      .filter-sec {
+        display: flex;
+        background-color: white;
+        border-radius: 16px;
+        padding: 16px;
+        margin: 16px;
+        gap: 48px;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .highlight {
+        color: var(--primary-color);
+      }
+
+      .filter-item {
+        flex-shrink: 0;
+        min-width: 136px;
+      }
+
+      .filter-item > h3 {
+        display: inline;
+      }
+
+      .filter-item > i {
+        color: var(--primary-color);
+        font-size: 20px;
+      }
+
+      .home {
+        display: flex;
+        justify-content: center;
+      }
+
+      .things {
+        display: flex;
+        gap: 24px;
+        margin: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .thing-card {
+        background-color: white;
+        padding: 16px;
+        max-width: 350px;
+        flex-grow: 0;
+        box-sizing: border-box;
+        flex-shrink: 0;
+      }
+
+      .bookings {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        margin: 16px;
+        flex-wrap: wrap;
+      }
+
+      .booking-card {
+        background-color: white;
+        border-radius: 12px;
+        flex-shrink: 0;
+      }
+
+      .card-title {
+        padding: 12px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .card-title > h3 {
+        margin: 0;
+      }
+
+      .rating > i {
+        color: yellow;
+      }
+
+      .card-bottom {
+        padding: 12px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .card-bottom > span {
+        color: var(--para-color);
+      }
+
+      .old-price {
+        text-decoration: line-through;
+        color: var(--para-color);
+      }
+      .new-price {
+        color: var(--primary-color);
+        background-color: rgba(250, 116, 54, 0.2);
+        border-radius: 4px;
+      }
+
+      .book-btn {
+        visibility: hidden;
+        position: absolute;
+        bottom: 10px;
+        right: 90px;
+      }
+
+      .booking-card img:hover + .book-btn,
+      .book-btn:hover {
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="home">
+      <div class="filter-sec">
+        <div class="filter-item">
+          <h3>Location</h3>
+          <i class="fa-solid fa-angle-down"></i>
+          <p>Where are You going</p>
+        </div>
+        <div class="filter-item">
+          <h3>Date</h3>
+          <i class="fa-solid fa-angle-down"></i>
+          <p>When will You go</p>
+        </div>
+        <div class="filter-item">
+          <h3>Guests</h3>
+          <i class="fa-solid fa-angle-down"></i>
+          <p>Number of Guest</p>
+        </div>
+        <button>Explore Now</button>
+      </div>
+    </section>
+    <section>
+      <h2>Things you need <span class="highlight">to do</span> at</h2>
+    </section>
+    <section>
+      <div class="things">
+        <div class="thing-card">
+          <img src="Group.png" alt="Sign Up" />
+          <h4>Sign Up</h4>
+          <p>Complete all the work associated with planning & processing</p>
+        </div>
+        <div class="thing-card">
+          <img src="Vector.png" alt="Sign Up" />
+          <h4>Sign Up</h4>
+          <p>Complete all the work associated with planning & processing</p>
+        </div>
+        <div class="thing-card">
+          <img src="Group.png" alt="Sign Up" />
+          <h4>Sign Up</h4>
+          <p>Complete all the work associated with planning & processing</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="bookings">
+        <div class="booking-card">
+          <div style="position: relative">
+            <img src="Image.png" alt="Madrid" />
+            <button class="book-btn">Book Now</button>
+          </div>
+          <div class="card-title">
+            <h3>Madrid</h3>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              4.8
+            </div>
+          </div>
+          <div class="card-bottom">
+            <span> <i class="fa-solid fa-location-dot"></i> Spain </span>
+            <div>
+              <span class="old-price">$950</span>
+              <span class="new-price">$850</span>
+            </div>
+          </div>
+        </div>
+        <div class="booking-card">
+          <div style="position: relative">
+            <img src="Image.png" alt="Madrid" />
+            <button class="book-btn">Book Now</button>
+          </div>
+          <div class="card-title">
+            <h3>Madrid</h3>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              4.8
+            </div>
+          </div>
+          <div class="card-bottom">
+            <span> <i class="fa-solid fa-location-dot"></i> Spain </span>
+            <div>
+              <span class="old-price">$950</span>
+              <span class="new-price">$850</span>
+            </div>
+          </div>
+        </div>
+        <div class="booking-card">
+          <div style="position: relative">
+            <img src="Image.png" alt="Madrid" />
+            <button class="book-btn">Book Now</button>
+          </div>
+          <div class="card-title">
+            <h3>Madrid</h3>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              4.8
+            </div>
+          </div>
+          <div class="card-bottom">
+            <span> <i class="fa-solid fa-location-dot"></i> Spain </span>
+            <div>
+              <span class="old-price">$950</span>
+              <span class="new-price">$850</span>
+            </div>
+          </div>
+        </div>
+        <div class="booking-card">
+          <div style="position: relative">
+            <img src="Image.png" alt="Madrid" />
+            <button class="book-btn">Book Now</button>
+          </div>
+          <div class="card-title">
+            <h3>Madrid</h3>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              4.8
+            </div>
+          </div>
+          <div class="card-bottom">
+            <span> <i class="fa-solid fa-location-dot"></i> Spain </span>
+            <div>
+              <span class="old-price">$950</span>
+              <span class="new-price">$850</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <h1>Some more changes added to the existing url</h1>
+  </body>
+</html>

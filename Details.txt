@@ -1,0 +1,33 @@
+
+Topics:
+
+  HTML Tag to embed another webpage or website,
+    <iframe>
+    Reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe
+  
+  CSS Props:
+    columns & column-count
+  
+  display grid:
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px 200px))
+
+  1. important in tailwindcss - add a prefix ! to the classname
+  2. flexbox & grid in tailwindcss
+  3. Layouts
+  4. RWD - Responsive Web Design using tailwindcss
+    sm --> 640px >= sm < 768px
+    md --> 768px >= md < 1024px
+    lg --> 1024px >= lg < 1280px
+    xl --> 1280px >= xl < 1536px
+    2xl --> 1536px >= 2xl 
+  5. action/state based class modification
+      hover:text-pink-500 --> pink color text only on hover
+
+Task:
+
+  Create an HTML form in the Center of the Page.
+
+  Form Inputs, Email, Name, Phonenumber.
+
+  Note: Try To utilize Only the TailwindCSS Classes & refrain(try to avoid) using normal CSS
